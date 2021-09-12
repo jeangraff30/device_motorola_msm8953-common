@@ -103,6 +103,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.msm8953
+
 # Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
@@ -117,7 +121,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Fingerprint IDC
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc
+    $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
 
 # GPS Config
 PRODUCT_COPY_FILES += \
